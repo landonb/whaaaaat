@@ -56,7 +56,7 @@ questions = [
             {
                 'name': 'Pepperoni'
             },
-            Separator('= The extras ='),
+            Separator('\n******************\n= The extras ='),
             {
                 'name': 'Pineapple'
             },
@@ -66,12 +66,146 @@ questions = [
             },
             {
                 'name': 'Extra cheese'
-            }
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
+            {
+                'name': 'Extra cheese'
+            },
         ],
         'validate': lambda answer: 'You must choose at least one topping.' \
-            if len(answer) == 0 else True
+            if len(answer) == 0 else True,
+        'filter': lambda answer: [ans + 'NO'  for ans in answer],
+        #'default': lambda answer: [ans + 'NO'  for ans in answer],
+        ##'validate': lambda answer: [ans + 'YES'  for ans in answer],
+        'validate': lambda answer: 'sdfsdfsdf',
     }
 ]
 
 answers = prompt(questions, style=style)
-print_json(answers)
+#print_json(answers)
+

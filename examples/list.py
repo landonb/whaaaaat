@@ -24,7 +24,7 @@ questions = [
         'message': 'What do you want to do?',
         'choices': [
             'Order a pizza',
-            'Make a reservation',
+            'Make a reservation dsfkjs;df ;lkdsjflkdsjflkdsjflkdsjf lkdsfjlkdsjf dslkjf dslkfjdslkfjds lkfjdsf lksdjflkdsjf lksjfd sdfs dfkjdslkfjds flkjds flkdsjf lkdsjf lkdsjfs lkdjf sdlkfjs dlkfdslkfjsd lkjf',
             Separator(),
             'Ask for opening hours',
             {
