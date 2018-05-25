@@ -218,6 +218,28 @@ def question(message, **kwargs):
                 ic.choices[ic.pointer_index][2]:
             _prev()
 
+    @manager.registry.add_binding(Keys.Left, eager=True)
+    def cycle_choices_prev(event):
+        print('PREV')
+        pass
+#        def _next():
+#            ic.pointer_index = ((ic.pointer_index + 1) % ic.line_count)
+#        _next()
+#        while isinstance(ic.choices[ic.pointer_index], Separator) or \
+#                ic.choices[ic.pointer_index][2]:
+#            _next()
+
+    @manager.registry.add_binding(Keys.Right, eager=True)
+    def cycle_choices_next(event):
+        print('NEXT')
+        pass
+#        def _next():
+#            ic.pointer_index = ((ic.pointer_index + 1) % ic.line_count)
+#        _next()
+#        while isinstance(ic.choices[ic.pointer_index], Separator) or \
+#                ic.choices[ic.pointer_index][2]:
+#            _next()
+
     @manager.registry.add_binding(Keys.Enter, eager=True)
     def set_answer(event):
         ic.answered = True
